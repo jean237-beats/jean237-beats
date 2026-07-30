@@ -1,15 +1,167 @@
 <!DOCTYPE html>
-<html lang='fr'>
- <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>mon portfolio</title>
-    <link rel='stylesheet' href='Citation.css'>
- </head>
- <body>
-   <div>
-    <blockquote> Djoussa Jean Jacques </blockquote>
-    <h3></h3>
-   </div>
- </body>
-</html>>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        /* ==========================================
+           1. COULEURS & FOND
+           ========================================== */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ECEBE6; /* Couleur du fond global (beige/gris) */
+            color: #141414;            /* Couleur du texte principal */
+        }
+
+        /* ==========================================
+           2. BANNIÈRE HAUT (TITRE & STYLE)
+           ========================================== */
+        .banniere-noire {
+            background-color: #121212; /* Fond noir du haut */
+            padding: 40px 30px;
+            border-radius: ;
+        }
+
+        .grand-titre {
+            color: #F04A23;        /* Couleur de l'écriture (Orange) */
+            font-size: 70px;       /* Taille du mot Portfolio */
+            font-weight: 900;
+            margin: 0;
+        }
+
+        .nom-a-droite {
+            color: #FFFFFF;        /* Nom en blanc */
+            font-size: 22px;
+            text-align: right;     /* Aligné à droite */
+            margin-top: 20px;
+        }
+        .contact {
+            color: #FFFFFF;        /* Contact en blanc */
+            font-size: 22px;
+            text-align: right;     /* Aligné à droite */
+            margin-top: 20px;
+        } 
+        .email {
+            color: #FFFFFF;        /* Email en blanc */
+            font-size: 22px;
+            text-align: right;     /* Aligné à droite */
+            margin-top: 20px;
+        }
+
+        /* ==========================================
+           3. PRESENTATION & INFOS PERSONNELLES
+           ========================================== */
+        .section-presentation {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .label-section {
+            color: #666666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* Disposition côte à côte (Photo à gauche / Texte à droite) */
+        .conteneur-flex {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            flex-wrap: wrap; /* S'adapte automatiquement sur téléphone */
+        }
+
+        /* Boîte orange contenant la photo */
+        .boite-photo {
+            background-color: #F04A23; /* Fond orange derrière la photo */
+            width: 260px;
+            height: 310px;
+            border-radius: 15px;       /* Coins arrondis */
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .boite-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajuste la photo sans la déformer */
+        }
+
+        /* Textes à droite */
+        .bloc-texte {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .salutation {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .grand-nom {
+            color: #F04A23;     /* Nom en orange */
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+
+        .profession {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .bio-italique {
+            font-style: italic; /* Texte de bio en italique */
+            color: #333333;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- BANNIÈRE NOIRE DU HAUT -->
+    <div class="banniere-noire">
+        <h1 class="grand-titre">Portfolio</h1>
+        <div class="nom-a-droite">Djoussa Jean Jacques.</div>
+        <div class="contact">+237 686745098</div>
+        <div class="email">jeanbusiness237@gmail.com</div>
+    </div>
+
+    <!-- SECTION PRÉSENTATION -->
+    <div class="section-presentation">
+        <div class="label-section">About Me</div>
+
+        <div class="conteneur-flex">
+            
+            <!-- 1. VOTRE PHOTO -->
+            <div class="boite-photo">
+                <img src="POP.jpg" alt="Photo de profil">
+            </div>
+
+            <!-- 2. VOS INFORMATIONS -->
+            <div class="bloc-texte">
+                <div class="salutation">Bonjour tout le monde</div>
+                <div class="grand-nom">Djoussa Jean Jacques</div>
+                
+                <div class="profession">
+                    Étudiant en Gestion des Systemes d'Informations<br>
+                    J'étudie la gestion des systemes d'information et je me forme a des languages tels que SQL, HTML, CSS, JavaScript, PHP
+                </div>
+
+                <p class="bio-italique">
+                   Je suis un apprenti web codeur avec une préférence pour le html, le javascript et passionné par la psychologie humaine...
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
