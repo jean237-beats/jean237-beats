@@ -5,54 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <style>
-        /* ==========================================
-           1. COULEURS & FOND
-           ========================================== */
+        
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #ECEBE6; /* Couleur du fond global (beige/gris) */
-            color: #141414;            /* Couleur du texte principal */
+            background-color: #ECEBE6; 
+            color: #141414;            
         }
-
-        /* ==========================================
-           2. BANNIÈRE HAUT (TITRE & STYLE)
-           ========================================== */
+        
         .banniere-noire {
-            background-color: #121212; /* Fond noir du haut */
+            background-color: #121212;
             padding: 40px 30px;
             border-radius: ;
         }
 
         .grand-titre {
-            color: #F04A23;        /* Couleur de l'écriture (Orange) */
-            font-size: 70px;       /* Taille du mot Portfolio */
+            color: #F04A23;
+            font-size: 70px; 
             font-weight: 900;
             margin: 0;
         }
 
         .nom-a-droite {
-            color: #FFFFFF;        /* Nom en blanc */
+            color: #FFFFFF; 
             font-size: 22px;
-            text-align: right;     /* Aligné à droite */
+            text-align: right;
             margin-top: 20px;
         }
         .contact {
-            color: #FFFFFF;        /* Contact en blanc */
+            color: #FFFFFF;  
             font-size: 22px;
-            text-align: right;     /* Aligné à droite */
+            text-align: right; 
             margin-top: 20px;
         } 
         .email {
-            color: #FFFFFF;        /* Email en blanc */
+            color: #FFFFFF; 
             font-size: 22px;
-            text-align: right;     /* Aligné à droite */
+            text-align: right;
             margin-top: 20px;
         }
 
-        /* ==========================================
-           3. PRESENTATION & INFOS PERSONNELLES
-           ========================================== */
         .section-presentation {
             max-width: 900px;
             margin: 40px auto;
@@ -65,20 +57,18 @@
             margin-bottom: 20px;
         }
 
-        /* Disposition côte à côte (Photo à gauche / Texte à droite) */
         .conteneur-flex {
             display: flex;
             gap: 30px;
             align-items: flex-start;
-            flex-wrap: wrap; /* S'adapte automatiquement sur téléphone */
+            flex-wrap: wrap; 
         }
-
-        /* Boîte orange contenant la photo */
+            
         .boite-photo {
-            background-color: #F04A23; /* Fond orange derrière la photo */
+            background-color: #F04A23; 
             width: 260px;
             height: 310px;
-            border-radius: 15px;       /* Coins arrondis */
+            border-radius: 15px; 
             overflow: hidden;
             flex-shrink: 0;
         }
@@ -86,10 +76,10 @@
         .boite-photo img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ajuste la photo sans la déformer */
+            object-fit: cover; 
         }
 
-        /* Textes à droite */
+        
         .bloc-texte {
             flex: 1;
             min-width: 280px;
@@ -102,7 +92,7 @@
         }
 
         .grand-nom {
-            color: #F04A23;     /* Nom en orange */
+            color: #F04A23;    
             font-size: 45px;
             font-weight: bold;
             margin-bottom: 15px;
@@ -117,7 +107,7 @@
         }
 
         .bio-italique {
-            font-style: italic; /* Texte de bio en italique */
+            font-style: italic;
             color: #333333;
             line-height: 1.6;
         }
@@ -126,7 +116,6 @@
 </head>
 <body>
 
-    <!-- BANNIÈRE NOIRE DU HAUT -->
     <div class="banniere-noire">
         <h1 class="grand-titre">Portfolio</h1>
         <div class="nom-a-droite">Djoussa Jean Jacques.</div>
@@ -134,18 +123,15 @@
         <div class="email">jeanbusiness237@gmail.com</div>
     </div>
 
-    <!-- SECTION PRÉSENTATION -->
     <div class="section-presentation">
         <div class="label-section">About Me</div>
 
         <div class="conteneur-flex">
             
-            <!-- 1. VOTRE PHOTO -->
             <div class="boite-photo">
                 <img src="POP.jpg" alt="Photo de profil">
             </div>
 
-            <!-- 2. VOS INFORMATIONS -->
             <div class="bloc-texte">
                 <div class="salutation">Bonjour tout le monde</div>
                 <div class="grand-nom">Djoussa Jean Jacques</div>
